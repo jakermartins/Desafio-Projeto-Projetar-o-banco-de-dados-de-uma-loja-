@@ -1,0 +1,13 @@
+CREATE TABLE mars_store (id INTEGER PRIMARY KEY, name TEXt, quantity INTEGER, price NUMERIC);
+
+INSERT INTO mars_store VALUES (1, "calça jeans", 10, 60);
+INSERT INTO mars_store VALUES (3, "cropped rosa", 1, 30);
+INSERT INTO mars_store VALUES (2, "short saia", 3, 55);
+INSERT INTO mars_store VALUES (5, "blazer", 4, 100);
+INSERT INTO mars_store VALUES (4, "biquini", 5, 25);
+
+SELECT * FROM mars_store;
+
+SELECT * FROM mars_store ORDER BY price;
+SELECT SUM(price) FROM mars_store;
+SELECT SUM(quantity) FROM mars_store;
